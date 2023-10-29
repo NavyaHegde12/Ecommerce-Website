@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <h3>FLOWERSHOP</h3>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="h-icons">
+            <a href="#"><i class="bx bx-heart"></i></a>
+            <a href="cart.html"><i class="bx bx-shopping-bag cart-icon"><span class="item-count"
+                        id="item-count">0</span></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="cart-section">
+        <div class="cart-container d-none" id="cart-container">
+            <div class="cart-items">
+                <table class="cart-items-table">
+                    <thead class="cart-items-table-head">
+                        <tr>
+                            <th>Image</th>
+                            <th width="45%">Title</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items-table-body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-summary">
+                <div class="cart-summary-card">
+                    <h3 class="cart-summary-card-heading">Cart Summary</h3>
+                    <div class="cart-summary-card-content">
+                        <h4>Grand Total</h4>
+                        <h2 class="grand-total" id="grand-total">₹&nbsp;<span id="sum"></span></h2>
+                        <button class="checkout-btn">Proceed to Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-cart" id="empty-cart">
+            <div class="center-text"><i class="bx bx-shopping-bag" style="font-size: 4rem; padding-bottom: 1.5rem"></i> </div>
+            <h1 class="center-text">Your shopping cart is Empty</h1>
+        </div>
+    </section>
+
+    <footer>
+        <section class="contact">
+            <div class="contact-box">
+                <h4>MY ACCOUNT</h4>
+                <ul>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="cart.html">Shopping cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Orders Tracking</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="#">Privacy Page</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Delivery information</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Help and contact us</a></li>
+                    <li><a href="#">Returns and Refunds</a></li>
+                    <li><a href="#">Online Stores</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h5>Connect with us</h5>
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+        </section>
+        <div class="end-text">
+            &copy;Navya Hegde
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+    <script>
+        populateCart()
+    </script>
+</body>
+
+</html>

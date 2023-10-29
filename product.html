@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Page</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <h3>FLOWERSHOP</h3>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="h-icons">
+            <a href="#"><i class="bx bx-heart"></i></a>
+            <a href="cart.html"><i class="bx bx-shopping-bag cart-icon"><span class="item-count"
+                        id="item-count">0</span></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="product-section">
+        <div class="product-details-container">
+            <div class="product-image-container">
+                <div class="product-main-image">
+                    <img class="img-fluid" src="assets/images/banner1.jpg" alt="" id="product-image">
+                </div>
+
+                <div class="product-other-images">
+                    <div class="small-img-col">
+                        <img src="assets/images/banner24.jpg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="assets/images/banner23.jpg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="assets/images/banner22.jpg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="assets/images/banner25.jpg" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h3 class="product-name">Eternity White Roses Bouquet</h3>
+                <h2 class="product-price">₹250.00</h2>
+
+                <div class="product-add-to-cart-section">
+                    <!-- <form method="post" action="#"> -->
+                    <input type="number" id="product-count" name="product-count" step="1" value="1" min="1" max="100"
+                        onchange="updateCount(this, 'add-to-cart-product-pg')">
+                    <button type="submit" class="add-to-cart-btn" id="add-to-cart-product-pg" data-qty="1" data-id="f1"
+                        data-image="banner1.jpg" data-price="250" data-title="Eternity White Roses Bouquet">Add to
+                        Cart</button>
+                    <!-- </form> -->
+                </div>
+
+                <div class="product-description-container">
+                    <h4 class="headings">Description:</h4>
+                    <p class="details">
+                        This bunch consists of 12 White roses. This divine beauty is a symbol of purity of heart. This
+                        is an ideal way to project. White roses are the flower of light, they are also called the
+                        bride's flowers in some traditions.
+                    </p>
+                    <div class="tips-heading"> Carting Tips:</div>
+                    <ul class="tips">
+                        <li>Start by removing the bouquet wrapper.</li>
+                        <li>Cut the stems by one or two inches from the bottom to ensure better water intake.</li>
+                        <li>Choose a vase and fill it with water.</li>
+                        <li>Remove the leaves below the water level to prevent bacterial growth.</li>
+                        <li>Add two tablespoon of Lemon Juice and sugar into the water.</li>
+                        <li>Make sure to place the vase in indirect sunlight.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products-container">
+        <h3 class="center-text">Related Products</h3>
+
+        <div class="related-products">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/new-p1.png">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+                <div class="card-content">
+
+                    <h4 class="card-heading">ROSE FLOWER TREE</h4>
+                    <h5 class="price">₹50.00</h5>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/new-p2.png">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+                <div class="card-content">
+
+                    <h4 class="card-heading">PINK FLOWER TREE</h4>
+                    <h5 class="price">₹50.00</h5>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/new-p1.png">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+                <div class="card-content">
+
+                    <h4 class="card-heading">ROSE FLOWER TREE</h4>
+                    <h5 class="price">₹50.00</h5>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/new-p2.png">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+                <div class="card-content">
+
+                    <h4 class="card-heading">PINK FLOWER TREE</h4>
+                    <h5 class="price">₹50.00</h5>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <section class="contact">
+            <div class="contact-box">
+                <h4>MY ACCOUNT</h4>
+                <ul>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="cart.html">Shopping cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Orders Tracking</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="#">Privacy Page</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Delivery information</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Help and contact us</a></li>
+                    <li><a href="#">Returns and Refunds</a></li>
+                    <li><a href="#">Online Stores</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h5>Connect with us</h5>
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+        </section>
+        <div class="end-text">
+            &copy;Navya Hegde
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top"><i class="bx bx-chevrons-up"></i></a>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
